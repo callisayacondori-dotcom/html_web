@@ -1,0 +1,65 @@
+/* Reset básico para evitar diferenças entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Faz o padding não aumentar o tamanho total */
+}
+
+/* Estilização geral da página */
+body {
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    background-color: #f4f4f4; /* Cor de fundo suave */
+
+    display: flex; /* Ativa flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+
+    height: 100vh; /* Ocupa toda a altura da tela */
+}
+
+/* Caixa principal do conteúdo */
+.container {
+    background-color: white; /* Fundo branco */
+    padding: 20px; /* Espaço interno */
+    border-radius: 10px; /* Bordas arredondadas */
+
+    /* Sombra para destacar o bloco */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Campo de entrada */
+input {
+    padding: 10px; /* Espaço interno */
+    margin: 10px 0; /* Espaço externo vertical */
+    width: 200px; /* Largura fixa */
+}
+
+/* Botão */
+button {
+    padding: 10px 20px; /* Espaçamento interno */
+    cursor: pointer; /* Cursor de clique */
+}
+
+/* Área da mensagem */
+#mensagem {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* 📱 RESPONSIVIDADE BÁSICA */
+@media (max-width: 600px) {
+    
+    .container {
+        width: 90%; /* Ocupa quase toda a tela em celular */
+    }
+
+    input {
+        width: 100%; /* Input ocupa toda a largura */
+    }
+
+    button {
+        width: 100%; /* Botão também */
+    }
+}
